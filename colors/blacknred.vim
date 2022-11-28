@@ -8,6 +8,7 @@ if exists("syntax on")
 syntax reset
 endif
 
+
 set t_Co=256
 let g:colors_name = "blacknred"
 
@@ -39,10 +40,11 @@ exe 'hi Visual guibg='s:bg2
 exe 'hi CursorLineNr guifg='s:keyword' guibg='s:bg
 exe 'hi CursorColumn  guibg='s:bg2
 exe 'hi ColorColumn  guibg='s:bg2
-exe 'hi LineNr guifg='s:fg2' guibg='s:bg
-exe 'hi VertSplit guifg='s:fg3' guibg='s:bg3
+exe 'hi LineNr guifg='s:bg3' guibg='s:bg
+exe 'hi VertSplit guifg='s:bg' guibg='s:bg
 exe 'hi MatchParen guifg='s:warning2'  gui=underline'
 exe 'hi StatusLine guifg='s:fg2' guibg='s:bg3' gui=bold'
+exe 'hi StatusLineNC guifg='s:fg2' guibg='s:bg3' gui=bold'
 exe 'hi Pmenu guifg='s:fg' guibg='s:bg2
 exe 'hi PmenuSel  guibg='s:bg3
 exe 'hi IncSearch guifg='s:bg' guibg='s:keyword
