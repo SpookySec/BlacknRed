@@ -19,7 +19,7 @@ let s:fg2="#c5c5c5"
 let s:fg3="#b4b4b4"
 let s:fg4="#a3a3a3"
 let s:bg2="#121212"
-let s:bg3="#383838"
+let s:bg3="#242424"
 let s:bg4="#4b4b4b"
 let s:keyword="#ca4e4e"
 let s:builtin="#57afdb"
@@ -35,10 +35,11 @@ let s:warning2="#ffbb00"
 exe 'hi Normal guifg='s:fg' guibg='s:bg
 exe 'hi Cursor guifg='s:bg' guibg='s:fg
 exe 'hi CursorLine  guibg='s:bg2
-exe 'hi CursorLineNr guifg='s:str' guibg='s:bg
+exe 'hi Visual guibg='s:bg2
+exe 'hi CursorLineNr guifg='s:keyword' guibg='s:bg
 exe 'hi CursorColumn  guibg='s:bg2
 exe 'hi ColorColumn  guibg='s:bg2
-exe 'hi LineNr guifg='s:fg2' guibg='s:bg2
+exe 'hi LineNr guifg='s:fg2' guibg='s:bg
 exe 'hi VertSplit guifg='s:fg3' guibg='s:bg3
 exe 'hi MatchParen guifg='s:warning2'  gui=underline'
 exe 'hi StatusLine guifg='s:fg2' guibg='s:bg3' gui=bold'
