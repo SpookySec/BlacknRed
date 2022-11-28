@@ -13,12 +13,12 @@ let g:colors_name = "blacknred"
 
 
 " Define reusable colorvariables.
-let s:bg="#121212"
+let s:bg="#090909"
 let s:fg="#d6d6d6"
 let s:fg2="#c5c5c5"
 let s:fg3="#b4b4b4"
 let s:fg4="#a3a3a3"
-let s:bg2="#252525"
+let s:bg2="#121212"
 let s:bg3="#383838"
 let s:bg4="#4b4b4b"
 let s:keyword="#ca4e4e"
@@ -65,17 +65,17 @@ exe 'hi ErrorMsg guifg='s:warning' guibg='s:bg2' gui=bold'
 exe 'hi WarningMsg guifg='s:fg' guibg='s:warning2
 exe 'hi Float guifg='s:const
 exe 'hi Function guifg='s:func
-exe 'hi Identifier guifg='s:type'  gui=italic'
+exe 'hi Identifier guifg='s:type
 exe 'hi Keyword guifg='s:keyword'  gui=bold'
 exe 'hi Label guifg='s:var
-exe 'hi NonText guifg='s:bg4' guibg='s:bg2
+exe 'hi NonText guifg='s:bg4
 exe 'hi Number guifg='s:const
 exe 'hi Operator guifg='s:keyword
 exe 'hi PreProc guifg='s:keyword
 exe 'hi Special guifg='s:fg
 exe 'hi SpecialKey guifg='s:fg2' guibg='s:bg2
 exe 'hi Statement guifg='s:keyword
-exe 'hi StorageClass guifg='s:type'  gui=italic'
+exe 'hi StorageClass guifg='s:type
 exe 'hi String guifg='s:str
 exe 'hi Tag guifg='s:keyword
 exe 'hi Title guifg='s:fg'  gui=bold'
@@ -87,7 +87,7 @@ exe 'hi Underlined   gui=underline'
 let g:terminal_color_0 = s:bg
 let g:terminal_color_1 = s:warning
 let g:terminal_color_2 = s:keyword
-let g:terminal_color_3 = s:bg4
+let g:terminal_color_3 = s:bg
 let g:terminal_color_4 = s:func
 let g:terminal_color_5 = s:builtin
 let g:terminal_color_6 = s:fg3
@@ -104,7 +104,7 @@ let g:terminal_color_15 = s:comment
 " Ruby Highlighting
 exe 'hi rubyAttribute guifg='s:builtin
 exe 'hi rubyLocalVariableOrMethod guifg='s:var
-exe 'hi rubyGlobalVariable guifg='s:var' gui=italic'
+exe 'hi rubyGlobalVariable guifg='s:var
 exe 'hi rubyInstanceVariable guifg='s:var
 exe 'hi rubyKeyword guifg='s:keyword
 exe 'hi rubyKeywordAsMethod guifg='s:keyword' gui=bold'
@@ -147,3 +147,6 @@ exe 'hi htmlSpecialTagName guifg='s:keyword
 
 " Markdown Highlighting
 exe 'hi mkdCode guifg='s:builtin
+
+" Make the errors and warnings show on the numbers
+set signcolumn=number
